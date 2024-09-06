@@ -1,4 +1,7 @@
+Projeto Mega Man X - Imersão Dev com Gemini, 2024
+
 Sobre o Projeto
+
 Este projeto é um pequeno banco de dados não oficial sobre a lendária série Mega Man X, criado com muito carinho para os fãs da franquia. As coisas vão quebrar, provavelmente!
 
 Com o intuito de casar os assuntos de Tecnologia, IA com o Gemini e Jogos, escolhi fazer o projeto com uma de minha franquia de jogos preferida, Mega Man X. 
