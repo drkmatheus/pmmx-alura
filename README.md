@@ -1,6 +1,8 @@
 Sobre o Projeto
-Este projeto é um pequeno banco de dados não oficial sobre a lendária série Mega Man X, criado com muito carinho para os fãs da franquia. 
-A ideia é oferecer um lugar onde os jogadores possam encontrar informações sobre os jogos, personagens e muito mais.
+Este projeto é um pequeno banco de dados não oficial sobre a lendária série Mega Man X, criado com muito carinho para os fãs da franquia.
+
+Com o intuito de casar os assuntos de Tecnologia, IA com o Gemini e Jogos, escolhi fazer o projeto com uma de minha franquia de jogos preferida, Mega Man X. 
+Resolvi me ater somente aos 3 primeiros jogos do Super Nintendo por questões de escopo.
 
 Aqui está o link do Vercel caso queira acessar: https://pmmx-alura.vercel.app/
 
