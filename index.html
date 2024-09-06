@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
+    <title>Mega Man X - Projeto Alura</title>
+</head>
+
+<body>
+    <header>
+        <!--<h1>Mega Man X</h1>-->
+        <div class="logo-container">
+            <img src="https://www.sprites-inc.co.uk/files/X/Titles/X1.gif" alt="Logo Mega Man X" class="logo">
+          </div>
+          <h3 id="subTitulo">Um pequeno banco de dados.</h3>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o nome do jogo ou personagem">
+            <button id="btn-pesquisar" onclick="pesquisar()">Pesquisar</button>
+            <div id ="mensagem-erro" class="mensagem-erro" style="display:none;">
+                Por favor, digite um termo válido.
+            </div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+       
+    </main>
+    <footer>
+        <div class="footer-content">
+          <p>2024 - Mega Man X. Todos os direitos reservados</p>
+          <p>Entre em contato pelo email: matheus@mmx.com</p>
+        </div>
+        <div class="sprite-container"><img src="img/X3_OpZX.png" alt="Sprite Rodape" class="sprite"></div>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="mchars.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

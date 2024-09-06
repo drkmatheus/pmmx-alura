@@ -1,0 +1,167 @@
+/* Importa a fonte Courrier Prime do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Courier Prime", monospace; /* Define a fonte padrão */
+   /* background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/09/mmxfi.jpg');  Cor de fundo da página */
+    background-color: black; /*deixar esse provisoriamente*/
+    background-image: url('img/OpBG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Centraliza os itens verticalmente ****center******/
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-family: "Press Start 2P", system-ui; /* puxa a fonte importada acima e aplica em h1, apesar dele nao estar em uso */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #006aa8; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza o título h3 */
+h3{
+    font-family: "Press Start 2P", system-ui; /*puxa a fonte importada acima e aplica em h3 */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #006aa8; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 1rem; /* Espaçamento abaixo de cada seção ****3*/
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.1rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-family: "Courier Prime", monospace;
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.1rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza a mensagem de erro */
+.mensagem-erro {
+    color: red; /* cor do texto */
+    font-weight: bold; /* Coloca a fonte em negrito */
+    margin-top: 0.5rem; /* Espaço acima da mensagem de erro */
+    margin-bottom: 1rem; /* Espaço abaixo da mensagem de erro */
+    padding: 0.5rem; /* Espaçamento interno para a mensagem de erro */
+    border: 1px solid red; /* Borda para destacar a mensagem */
+    border-radius: 4px; /* Bordas arredondadas para um visual mais agradável */
+    background-color: #f8d7da; /* Cor de fundo leve para destacar a mensagem */
+}
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 4rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    /*background-image: url('https://e0.pxfuel.com/wallpapers/597/462/desktop-wallpaper-green-digital-green.jpg'); /* Cor de fundo dos itens, nao esta sendo usado */
+    background-image: linear-gradient(to bottom,white 88%, grey); /* Definindo o fundo com um gradiente linear que vai de branco para cinza */
+    background-size: cover; /* Faz com que a imagem de fundo cubra completamente o elemento */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    border: 4px solid #0066ff; /* Define uma borda sólida de 4px com a cor azul #0066ff */
+    border-radius: 0.6rem; /* Borda arredondada levemente */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #324a34; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #0066ff; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: hsl(0, 0%, 0%); /* Cor do texto */
+    margin: 0.3rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-image: linear-gradient(to bottom, #0ff792,#6fd2a7)  ; /* Cor de fundo do rodapé em gradiente linear com sentido para baixo */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    /*padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    display: flex; /* Define o layout do elemento como um contêiner flexível */
+    justify-content: space-between; /* Espaça os contêineres */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0px;
+    
+}
+
+/* Outros estilos para o conteúdo do rodapé */
+.footer-content {
+    flex: 1; /* Permite que o conteúdo se expanda para preencher o espaço disponível */
+    margin-right: 600px; /* Adiciona uma margem de 600px à direita do conteúdo */
+}
+
+/* Estilos para o contêiner do sprite */
+.sprite-container {
+    position: relative; /* Define o posicionamento relativo para que os elementos internos possam ser posicionados de forma absoluta em relação a ele */
+}
+
+/* Estilos para o sprite */
+.sprite {
+    position: absolute; /* Define o posicionamento absoluto dentro do .sprite-container */
+    width: 600px; /* Define a largura do sprite como 600px */
+    bottom: -42px; /* Ajusta a distância do fundo do contêiner em -42px (para posicionar o sprite para baixo) */
+    right: 0px; /* Ajusta a distância da borda direita do contêiner em 0px */
+    z-index: 2; /* Define a ordem de empilhamento do sprite para garantir que ele fique sobre outros elementos com z-index menor */
+}

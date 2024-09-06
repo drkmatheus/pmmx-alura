@@ -1,0 +1,36 @@
+.logo {
+    width: 600px;
+    animation: mymove 2s ease-in-out forwards; /* Alterei a duração e adicionamos 'forwards' */
+  }
+  
+  @keyframes mymove {
+    0% {
+      transform: translateY(-250px); /* Posição inicial */
+    }
+    75% {
+      transform: translateY(50px); /* Posição intermediária para criar um efeito de "pular" */
+    }
+    100% {
+      transform: translateY(0); /* Posição final e estática */
+    }
+};
+
+.h3 {
+  font-family: "Press Start 2P", system-ui; /* puxa a fonte do css principal */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: #006aa8; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+  @keyframes fadeIn { /*cria os frames chave da animacao fade in para o texto h3*/
+    from {
+      opacity: 0; /*parte da opacidade em 0%*/
+    }
+    to {
+      opacity: 1; /*para a opacidade em 100% ficando visivel*/
+    }
+  }
+  
+  #subTitulo {
+    animation: fadeIn 3.5s ease-in; /*faz a animacao de aparecer em 3.5 segundos*/
+  }
